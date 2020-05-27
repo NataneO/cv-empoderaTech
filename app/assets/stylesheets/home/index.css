@@ -1,0 +1,10 @@
+.menuSection{
+  position: fixed;
+  width: 25vw;
+  height: 100vh;
+}
+
+.contentSection{
+  padding: 0vw 0vw 0vw 25vw;
+  height:100vh;
+}

@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 10
+
+development:
+  <<: *default
+  database: rawproject_development
+  # url:
+
+test:
+  <<: *default
+  database: rawproject_test
+  port: 5432
+
+production:
+  <<: *default
+  database: rawproject_production
+
