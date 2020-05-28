@@ -1,0 +1,2 @@
+class Complementary < ApplicationRecord
+end

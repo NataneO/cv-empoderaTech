@@ -22,8 +22,13 @@
     height: 10vw;
     background-color: #1c1c1c;
     overflow: hidden;
+    transition:300ms;
   }
-
+  
+  .photoObject:hover{
+    border:1px solid #00c990;
+    transition: 300ms;
+  }
 }
 
 .menuContent--items{
@@ -33,8 +38,7 @@
   .menuItem{
     margin:0.1vw;
     flex: 1;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: Roboto , bold;
   }
 }
 
@@ -42,8 +46,13 @@
   position: relative;
   .btn-medium{
     padding: 1.3vh;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: Roboto , bold;
+    transition: 300ms;
+  }
+
+  .btn-medium:hover{
+    transition:300ms;
+    text-decoration: underline;
   }
 }
 

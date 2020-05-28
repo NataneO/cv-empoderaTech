@@ -14,33 +14,49 @@
     margin:0.5vw;
     flex: 1;
     border-right:1px solid #00c990;
+    font-family: Roboto;
   }
   
   .profileItem--title{
-   font-family: Roboto;
-   font-weight: 700;
-   color: #00c990;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .decorativeDivider{
+    height: .1vw;
+    background-color: #00c990;
+    margin: .5vw 10%;
   }
   
-   .profileItem--content{
-   font-family: Roboto;
-   font-weight: 300;
-  }
-
-
   .academics, .skills{
     display: grid;
-    grid-template-rows: 1.5fr 1fr;
     grid-gap: .5vw;
-
   }
-}
 
-.decorativeDivider{
-  height: .1vw;
-  background-color: #00c990;
-  margin: .5vw 10%;
-}
+  .institute, .areaDomain{
+    font-weight: 500;
+  }
 
+  .description{
+    font-weight: 300;
+  }
+
+  .modelObject{
+    margin-bottom: 1vw;
+  }
   
+  .institute{
+    color: #00AB7A;
+  } 
+
+  .areaDomain{
+    color: #00c990;
+  }
+
+}
+
+
+
+
+
 

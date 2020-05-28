@@ -39,3 +39,13 @@ body{
 .text-extraSmall{
   font-size: .8vw;
 }
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: circle;
+  
+}

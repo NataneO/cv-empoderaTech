@@ -4,11 +4,16 @@
 
         <div class="profileItem--academics">
           <div class="profileItem--title">| Vida Acadêmica</div>
-<div class="decorativeDivider"></div>
+          <div class="decorativeDivider"></div>
           <div class="profileItem--content">
             <ul>
-              <li>Universidade Federal de Viçosa</li>
-              <li>Universidade Metodista de São Paulo</li>
+              <% @academics.each do |academic| %>  
+              <div class="modelObject">
+              <li class="institute"><%= academic.college%></li>
+              <div class="text-extraSmall areaDomain"><%= academic.course%> | <%= academic.dataRange%> </div>
+              <div class="text-extraSmall description"> <%= academic.description%> </div>
+              </div>
+              <% end %>
             </ul>
           </div>
         </div>
@@ -18,9 +23,13 @@
           <div class="decorativeDivider"></div>
           <div class="profileItem--content">
             <ul>
-              <li>Estação Hack</li>
-              <li>Origamid</li>
-              <li>Udemy</li>
+              <% @complementaries.each do |complementary| %>  
+              <div class="modelObject">
+              <li class="institute"><%= complementary.college%></li>
+              <div class="text-extraSmall areaDomain"><%= complementary.course%> | <%= complementary.dataRange%> </div>
+              <div class="text-extraSmall description"> <%= complementary.description%> </div>
+              </div>
+              <% end %>
             </ul>
           </div>
         </div>      
@@ -31,11 +40,13 @@
           <div class="decorativeDivider"></div>
           <div class="profileItem--content">
             <ul>
-              <li>DKS</li>
-              <li>Citel</li>
-              <li>RCV</li>
-              <li>ClapMe</li>
-              <li>ExpertVoice</li>
+               <% @professionals.each do |professional| %>  
+               <div class="modelObject">
+              <li class="institute"><%= professional.company%></li>
+              <div class="text-extraSmall areaDomain"><%= professional.role%> | <%= professional.dataRange%> </div>
+              <div class="text-extraSmall description"> <%= professional.description%> </div>
+              </div>
+              <% end %>
             </ul>
           </div>
         </div>
