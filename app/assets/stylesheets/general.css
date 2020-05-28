@@ -23,3 +23,19 @@ body{
   border: solid 1px #00c990;
   border-radius: 2vw;
 }
+
+.text-large{
+  font-size: 2vw;
+}
+
+.text-medium{
+  font-size:1.6vw;
+}
+
+.text-small{
+  font-size: 1.2vw;
+}
+
+.text-extraSmall{
+  font-size: .8vw;
+}
